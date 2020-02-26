@@ -1,4 +1,4 @@
-package com.skylogin.book.springboot.config;
+package com.skylogin.book.springboot.config.auth;
 
 import com.skylogin.book.springboot.config.auth.dto.OAuthAttributes;
 import com.skylogin.book.springboot.config.auth.dto.SessionUser;
