@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ABSPATH=$(readlink -f $0)
-ABSDIR=$(disname $ABSPATH)
+ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
 source ${ABSDIR}/switch.sh
 
@@ -33,6 +33,7 @@ do
     echo "> 엔진엑스에 연결하지 않고 배포를 종료합니다."
     exit 1
   fi
+
   echo "> Health check 연결실패. 재시도..."
   sleep 10
 done
